@@ -1,8 +1,16 @@
-.item1 {
-    background-color: var(--image1-color);
+main {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: auto;
+    column-gap: 30px;
+    row-gap: 50px;
   }
 
-  card {
+.card {
     border-radius: 20px;
-    var(--cards-backgroundcolor);
+    var(--white-color);
+  }
+
+.item1 {
+    background-color: var(--image1-color);
   }

@@ -7,23 +7,36 @@
   :root {
      --image1-color: #febd2f;
      --p2-color: #646464;
-     --cards-backgroundcolor: #FFFFFF;
+     --white-color: #FFFFFF;
+     --black-color: #000000;
   }
 
   body {
     background-color: #F5F3EF;
     margin: 30px 60px 0 60px;
   }
-
+/* ---------------------------NAV--------------- */
   nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 75px;
   }
+  
+  .nav-start {
+    display:flex;
+    gap: 30px;
+  }
 
   a {
     text-decoration: none;
+  }
+
+  .get-started-button {
+     color: var(--white-color);
+     padding: 10px 20px 10px 20px;
+     border-radius: 20px;
+     background-color: var(--black-color);
   }
 
   p1 {
@@ -53,36 +66,35 @@
   }
 
   .banner {
-    height: 600px;
+    height: 500px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: "banner-left banner-image";
-    margin-bottom: 0px;
+    margin-bottom: 50px;
+    /* background-color: greenyellow; */
   }
 
   .banner-heading {
+    width: 600px;
+    height: 500px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     grid-area: banner-left;
+    /* background-color: blue; */
   }
 
 
   .banner-image {
+    display: flex;
     border-radius: 40px;
     width: 600px;
     height: auto;
     grid-area: banner-image;
     grid-row: span 2;
-  }
-
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    column-gap: 30px;
-    row-gap: 50px;
   }
 
   footer {
