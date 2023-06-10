@@ -6,13 +6,15 @@
 
   :root {
      --image1-color: #febd2f;
-     --p2-color: #646464;
+     --dark-gray: #646464;
      --white-color: #FFFFFF;
      --black-color: #000000;
+     --light-gray: #F5F3EF;
+    
   }
 
   body {
-    background-color: #F5F3EF;
+    background-color: var(--light-gray);
     margin: 30px 60px 0 60px;
   }
 /* ---------------------------NAV--------------- */
@@ -44,10 +46,7 @@
     font-size: 24px;
   }
 
-  p2 {
-    font-family: Roboto;
-    font-size: 18px;
-  }
+  
   
   h1 {
     font-family Roboto Serif;
@@ -68,10 +67,11 @@
   .banner {
     height: 500px;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "banner-left banner-image";
+    display: flex;
+    justify-content: space-between;
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-template-rows: auto; */
+    /* grid-template-areas: "banner-left banner-image"; */
     margin-bottom: 50px;
     /* background-color: greenyellow; */
   }
@@ -89,7 +89,7 @@
 
 
   .banner-image {
-    display: flex;
+    /* display: flex; */
     border-radius: 40px;
     width: 600px;
     height: auto;
@@ -105,7 +105,7 @@
   .p2 {
     font-size: 18px;
     font-weight: regular;
-    color: var(--p2-color);
+    color: var(--dark-gray);
   }
 
  
