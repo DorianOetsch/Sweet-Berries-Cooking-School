@@ -1,0 +1,12 @@
+@media(max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    main {
+        grid-template: "item1 item2"
+                       "item3 item4"
+                       "item5 item6";
+    }
+}
+
