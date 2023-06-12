@@ -1,18 +1,19 @@
 main {
     display: grid;
-    /* grid-template-columns: 400px 400px 400px; */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, minmax(200px, 300px));
     grid-template: "item1 item2 item3"
                    "item4 item5 item6";
     justify-content: center;
-    grid-template-rows: auto;
+    grid-template-rows: 300px 300px;
     column-gap: 30px;
     row-gap: 50px;
     margin-bottom: 50px;
+    margin-top: 50px;
   }
 
 .card {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: space-around;
     border-radius: 20px;
@@ -26,17 +27,32 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     padding: 40px 30px 30px 30px;
-    background-color: var(--image1-color);
+    background-color: var(--orange-color);
   }
 
-main button {
-  display: flex;
-  align-items: center;
-  padding: 10px 20px 10px 20px;
+main img {
+  width: 60px;
+  height: auto;
+  position: absolute;
+  bottom: 90%;
+  left: 75%
+}
+
+.card-button {
+  height: 40px;
   width: 200px;
+  padding: 12px 0 10px 15px;
+  display: flex;
+  flex-direction: center;
+  justify-items: flex-end;
   flex-grow: 0;
   border: solid 1px var(--dark-gray);
   border-radius: 20px;
   color: var(--black-color);
   background-color: var(--white-color);
+}
+
+.card-button:hover {
+background-color: var(--light-gray);
+cursor: pointer;
 }
