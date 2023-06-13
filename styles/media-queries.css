@@ -1,4 +1,4 @@
-@media(max-width: 768px) {
+@media(max-width: 1279px) {
     .banner {
         flex-direction: column;
         justify-content: space-around;
@@ -10,3 +10,27 @@
     }
 }
 
+@media(max-width: 480px) {
+    .banner {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    main {
+        grid-template-columns: min-max(200px, 300px);
+        grid-template-rows: repeat(auto, 300px);
+        grid-template:none;
+    }
+
+    .get-started-button {
+        display:none;
+    }
+    
+    .hamburger-menu {
+        display: block;
+    }
+    
+    .nav-start {
+        display: none;
+    }
+}
