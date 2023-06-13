@@ -42,6 +42,10 @@
      border-radius: 20px;
      background-color: var(--black-color);
   }
+  
+  .hamburger-menu {
+    display:none;
+  }
 
   p1 {
     font-size: 24px;
@@ -87,10 +91,8 @@
     display: flex;
     flex-direction: column;
     justify-items: flex-start;    
-    /* justify-content: center; */
     align-items: flex-start;
     gap: 30px;
-    /* background-color: #febd2f; */
   }
 
   .banner-img-container {
