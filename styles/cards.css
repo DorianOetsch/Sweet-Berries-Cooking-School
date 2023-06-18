@@ -1,14 +1,14 @@
 main {
+  height: 100%;
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 300px));
-    grid-template: "item1 item2 item3"
-                   "item4 item5 item6";
+    grid-template-areas: "card1 card2 card3"
+                         "card4 card5 card6";
     justify-content: center;
     grid-template-rows: 300px 300px;
     column-gap: 30px;
     row-gap: 50px;
     margin: 50px 60px 50px 60px;
-    
   }
 
 .card {
@@ -19,7 +19,8 @@ main {
     border-radius: 20px;
     background-color: var(--white-color);
     padding: 20px;
-    min-height: 250px;;
+    min-height: 250px;
+    color: var(--dark-gray);
   }
 
 .item1 {
@@ -28,7 +29,28 @@ main {
     justify-content: flex-start;
     padding: 40px 30px 30px 30px;
     background-color: var(--orange-color);
+    grid-area: "card1";
   }
+
+.item2 {
+  grid-area: "card2";
+}
+
+.item3 {
+  grid-area: "card3";
+}
+
+.item4 {
+  grid-area: "card4"
+}
+
+.item5 {
+  grid-area: "card5";
+}
+
+.item6 {
+  grid-area: "card6";
+}
 
 main img {
   width: 60px;
