@@ -6,7 +6,7 @@ main {
                          "card4 card5 card6";
     justify-content: center;
     grid-template-rows: 300px 300px;
-    column-gap: 30px;
+    column-gap: 60px;
     row-gap: 50px;
     margin: 50px 60px 50px 60px;
   }
@@ -16,6 +16,7 @@ main {
     position: relative;
     flex-direction: column;
     justify-content: space-around;
+    align-items: space-around;
     border-radius: 20px;
     background-color: var(--white-color);
     padding: 20px;
