@@ -1,14 +1,36 @@
 @media(max-width: 1279px) {
     .banner {
-        /* grid-template-columns: 70%; */
-        /* grid-template-rows: 50% 1fr; */
-        grid-template: 40% 40% / 70%;
-        /* background-color: pink;   */
+        grid-template: 40% 40% / auto;
+        justify-content: center;
+        align-items: center;
+        /* background-color: yellow; */
+        width: auto;
+        
     }
     .banner-heading {
+        text-align: center;
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        width: auto;
         height: auto;
+        /* background-color: aqua; */
     } 
+
+    .banner-image {
+        display: flex;
+        justify-items: center; 
+        margin: 0 auto 0 auto;
+    }
    
+    .img-container {
+        width: 100%;
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        /* background-color: pink; */
+    }
     
     main {
         grid-template-areas: "card1 card2" 
