@@ -50,16 +50,17 @@
     }
 
 
-/* @media(max-width: 480px) { 
-    .banner {
+@media(max-width: 480px) { 
+
+    .banner, main {
+        display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
 
-    main {
-        grid-template-columns: min-max(200px, 300px);
-        grid-template-rows: repeat(6, 300px);
-        grid-template:none;
+    heading {
+        justify-self: center;
+        width: 100%
     }
 
     .get-started-button {
@@ -73,5 +74,5 @@
     .nav-start {
         display: none;
     }
-    */
+    
 }
