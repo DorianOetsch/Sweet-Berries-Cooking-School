@@ -16,17 +16,19 @@
   body {
     background-color: var(--light-gray);
     font-family: Roboto;
-    height: auto;
-    width: 100%;
+  }
 
+  .content {
+    width: 80%;
+    margin: 0 auto;
   }
 /* ---------------------------NAV--------------- */
   nav {
-    margin: 0px 60px 75px 60px;
+    margin-bottom:75px;
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
-    width: auto;
+    
   }
   
   .nav-start {
@@ -79,18 +81,17 @@
   }
 
   .banner {
-    /* height: 450px; */
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 40px;
-    margin:0 60px 20px 60px;
+    grid-gap: 30px;
+    margin-bottom: 20px;
     grid-template-areas: "banner-heading banner-img"
                          "banner-heading banner-img";
   }
 
   .banner-heading {
-    width: 80%;
+    width: 100%;
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -99,12 +100,14 @@
     gap: 30px;
     grid-area: "banner-heading";
   }
-
+.img-container {
+  display: flex;
+}
 
 
   .banner-image {
     border-radius: 40px;
-    max-width: 80%;
+    max-width: 100%;
     min-width: 350px;
     height: auto;
   }
