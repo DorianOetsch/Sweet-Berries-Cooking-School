@@ -76,7 +76,7 @@
     color: var(--black-color);
   }
 
-  heading {
+  heading { 
     text-align: center;
   }
 
@@ -102,14 +102,17 @@
   }
 .img-container {
   display: flex;
+  
 }
 
 
   .banner-image {
     border-radius: 40px;
     max-width: 100%;
-    min-width: 350px;
+    min-width: 500px;
     height: auto;
+    min-height: 300px;
+    object-fit: scale-down;
   }
 
   footer {
