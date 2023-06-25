@@ -51,6 +51,10 @@
     display:none;
   }
 
+  .hamburger-menu:hover {
+    cursor:pointer;
+  }
+
   p1 {
     font-size: 24px;
   }
